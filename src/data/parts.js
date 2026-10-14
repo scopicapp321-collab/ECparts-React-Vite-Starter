@@ -1,0 +1,72 @@
+export const categories = [
+  { name: "Motores", icon: "⚙️" },
+  { name: "Transmisiones", icon: "🔧" },
+  { name: "Luces y faros", icon: "💡" },
+  { name: "Carrocería", icon: "🚘" },
+  { name: "Suspensión y frenos", icon: "🛞" },
+  { name: "Piezas eléctricas", icon: "🔋" },
+  { name: "Interior", icon: "💺" },
+  { name: "Aire acondicionado", icon: "❄️" },
+];
+
+export const parts = [
+  {
+    id: "p-001",
+    title: "Alternador Toyota Corolla",
+    vehicle: "Toyota Corolla · 2017–2019 · 1.8L",
+    price: 85,
+    condition: "Usada · Probada",
+    seller: "Junker Isla Verde",
+    location: "Carolina, PR",
+    category: "Piezas eléctricas",
+    mode: "buy",
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85",
+    verified: true,
+  },
+  {
+    id: "p-002",
+    title: "Transmisión automática",
+    vehicle: "Honda Civic · 2016 · 2.0L",
+    price: 480,
+    condition: "Usada · Inspeccionada",
+    seller: "Auto Parts del Norte",
+    location: "Arecibo, PR",
+    category: "Transmisiones",
+    mode: "quote",
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=85",
+    verified: true,
+  },
+  {
+    id: "p-003",
+    title: "Faro delantero derecho",
+    vehicle: "Nissan Rogue · 2018–2020",
+    price: 110,
+    condition: "Usada · Buen estado",
+    seller: "Piezas JR",
+    location: "Bayamón, PR",
+    category: "Luces y faros",
+    mode: "buy",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85",
+    verified: false,
+  },
+  {
+    id: "p-004",
+    title: "Motor 2.5L completo",
+    vehicle: "Mazda 3 · 2015–2018 · 2.5L",
+    price: 950,
+    condition: "Usado · Se vende como conjunto",
+    seller: "Junker Isla Verde",
+    location: "Carolina, PR",
+    category: "Motores",
+    mode: "quote",
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85",
+    verified: true,
+  },
+];
+
+export const money = (value) =>
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(value);
